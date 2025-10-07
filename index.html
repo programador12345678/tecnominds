@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoMinds – Innovación y Robótica Educativa</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #005fa3;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #004080;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #0077cc;
+            margin-bottom: 20px;
+        }
+
+        .proyectos, .cursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Formulario de contacto */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #005fa3;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px){
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TecnoMinds – Innovación y Robótica Educativa</h1>
+        <p>Aprende, crea y desarrolla tus habilidades en tecnología y robótica</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2>Bienvenido a TecnoMinds</h2>
+        <p>Explora nuestros recursos educativos, participa en proyectos de robótica y mantente al día con las últimas noticias de innovación tecnológica.</p>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>En TecnoMinds, nuestra misión es fomentar el aprendizaje de la tecnología y la robótica educativa en estudiantes y docentes, promoviendo la innovación y creatividad en cada proyecto.</p>
+        <ul>
+            <li><strong>Misión:</strong> Inspirar a estudiantes y docentes en el aprendizaje de robótica y tecnología.</li>
+            <li><strong>Visión:</strong> Ser un referente de innovación educativa en tecnología y robótica.</li>
+            <li><strong>Objetivos:</strong> Brindar recursos educativos, talleres y proyectos prácticos para desarrollar habilidades tecnológicas.</li>
+        </ul>
+    </section>
+
+    <section id="cursos">
+        <h2>Cursos y Talleres</h2>
+        <div class="cursos">
+            <div class="card">
+                <h3>Introducción a la Robótica</h3>
+                <p>Aprende los conceptos básicos de robótica y programación de manera práctica.</p>
+            </div>
+            <div class="card">
+                <h3>Programación con Arduino</h3>
+                <p>Desarrolla proyectos con Arduino y mejora tus habilidades en electrónica y programación.</p>
+            </div>
+            <div class="card">
+                <h3>Competencias de Innovación</h3>
+                <p>Participa en concursos y desafíos tecnológicos para poner a prueba tus conocimientos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyectos">
+            <div class="card">
+                <h3>Robot Seguidor de Línea</h3>
+                <p>Proyecto donde los estudiantes construyen y programan robots capaces de seguir un recorrido predeterminado.</p>
+            </div>
+            <div class="card">
+                <h3>Brazo Robótico</h3>
+                <p>Diseño y programación de un brazo robótico para tareas de precisión y control remoto.</p>
+            </div>
+            <div class="card">
+                <h3>Drone Educativo</h3>
+                <p>Proyecto de drones para aprendizaje de control, sensores y programación de vuelo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias">
+        <h2>Noticias y Eventos</h2>
+        <ul>
+            <li>Participación en First Global 2025 – Panamá.</li>
+            <li>Medalla de oro en competencias de robótica en Atenas 2024.</li>
+            <li>Actualización mensual de proyectos educativos en línea.</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TecnoMinds. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales: Facebook | Instagram | YouTube</p>
+    </footer>
+
+</body>
+</html>
